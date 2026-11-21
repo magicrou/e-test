@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"ex2_double\startup_stm32f103xb.o"
+"ex2_double\main.o"
+"ex2_double\gpio.o"
+"ex2_double\tim.o"
+"ex2_double\stm32f1xx_it.o"
+"ex2_double\stm32f1xx_hal_msp.o"
+"ex2_double\stm32f1xx_hal_gpio_ex.o"
+"ex2_double\stm32f1xx_hal_tim.o"
+"ex2_double\stm32f1xx_hal_tim_ex.o"
+"ex2_double\stm32f1xx_hal.o"
+"ex2_double\stm32f1xx_hal_rcc.o"
+"ex2_double\stm32f1xx_hal_rcc_ex.o"
+"ex2_double\stm32f1xx_hal_gpio.o"
+"ex2_double\stm32f1xx_hal_dma.o"
+"ex2_double\stm32f1xx_hal_cortex.o"
+"ex2_double\stm32f1xx_hal_pwr.o"
+"ex2_double\stm32f1xx_hal_flash.o"
+"ex2_double\stm32f1xx_hal_flash_ex.o"
+"ex2_double\stm32f1xx_hal_exti.o"
+"ex2_double\system_stm32f1xx.o"
+--strict --scatter "ex2_double\ex2_double.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ex2_double.map" -o ex2_double\ex2_double.axf

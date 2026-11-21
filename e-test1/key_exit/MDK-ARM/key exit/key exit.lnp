@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"key exit\startup_stm32f103xb.o"
+"key exit\main.o"
+"key exit\gpio.o"
+"key exit\stm32f1xx_it.o"
+"key exit\stm32f1xx_hal_msp.o"
+"key exit\stm32f1xx_hal_gpio_ex.o"
+"key exit\stm32f1xx_hal.o"
+"key exit\stm32f1xx_hal_rcc.o"
+"key exit\stm32f1xx_hal_rcc_ex.o"
+"key exit\stm32f1xx_hal_gpio.o"
+"key exit\stm32f1xx_hal_dma.o"
+"key exit\stm32f1xx_hal_cortex.o"
+"key exit\stm32f1xx_hal_pwr.o"
+"key exit\stm32f1xx_hal_flash.o"
+"key exit\stm32f1xx_hal_flash_ex.o"
+"key exit\stm32f1xx_hal_exti.o"
+"key exit\system_stm32f1xx.o"
+--strict --scatter "key exit\key exit.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "key exit.map" -o "key exit\key exit.axf"
